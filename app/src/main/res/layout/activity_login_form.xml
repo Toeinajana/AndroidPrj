@@ -6,21 +6,99 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="30dp"
+    android:gravity="center"
+    android:background="@drawable/bg"
     tools:context=".Login_form">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/icecream" />
 
     <android.support.design.widget.TextInputLayout
-        android:layout_width="395dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="191dp"
         android:focusable="true"
         android:focusableInTouchMode="true"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="232dp">
+        android:textColorHint="@color/colorPrimary"
+        >
 
-        <android.support.design.widget.TextInputEditText
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Your Full name" />
-
+            android:ems="5"
+            android:hint="Email"
+            android:inputType="text"
+            android:textSize="22dp"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="10dp"/>
     </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="191dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorPrimary"
+        app:passwordToggleEnabled="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="22dp"
+            android:drawableStart="@drawable/password"
+            android:drawablePadding="10dp"
+
+
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <!--Button-->
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <android.support.design.button.MaterialButton
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="22dp"
+              android:text="Login"
+              android:layout_marginTop="25dp"
+              android:layout_marginRight="40dp"
+              android:gravity="center"
+              android:background="@color/colorPrimaryDark"
+
+
+              />
+          <android.support.design.button.MaterialButton
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:textSize="22dp"
+              android:text="Sign Up"
+              android:layout_marginTop="25dp"
+              android:gravity="center"
+              android:background="@color/colorPrimaryDark"
+              android:onClick="btn_signup"
+
+              />
+
+      </LinearLayout>
+
+
+
+
+
 </LinearLayout>
