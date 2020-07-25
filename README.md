@@ -12,4 +12,4 @@ This is a self-learning project as I have been trying to stay active and updated
 </p>
 
 ### Last Update
-21 July 2020
+25 July 2020
